@@ -27,4 +27,4 @@ Route::put('/event/{id}/update', ['as' => 'event.update', 'uses' =>'EventControl
 Route::delete('/event/{id}',     ['as' => 'event.destroy', 'uses' =>'EventController@destroy']);
 Route::post('/event/import',      ['as' => 'event.import', 'uses' =>'EventController@import']);
 Route::get('/event/{id}/export', ['as' => 'event.export', 'uses' =>'EventController@export']);
-Route::get('/event/{id}/invite', ['as' => 'event.invite', 'uses' =>'EventController@invite']);
+Route::get('/event/{id}/invite', ['as' => 'event.invite', 'uses' =>'EventController@mail']);

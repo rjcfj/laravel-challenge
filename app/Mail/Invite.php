@@ -23,7 +23,7 @@ class Invite extends Mailable
     public function __construct($id)
     {
         $this->event = Event::findOrFail($id);
-        $this->user = Auth::user();
+        $this->auth = Auth::user();
     }
 
     /**

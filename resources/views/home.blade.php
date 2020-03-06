@@ -7,14 +7,14 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
 
-                <div class="panel-body">
+                <div class="panel-body" style="text-align: center;">
                     @if (session('status'))
                         <div class="alert alert-success">
                             {{ session('status') }}
                         </div>
                     @endif
 
-                    You are logged in!
+                    <a href="{{ route('event.index') }}" class="btn btn-default btn-lg active" role="button">Event</a>
                 </div>
             </div>
         </div>

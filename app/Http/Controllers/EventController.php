@@ -4,12 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Event;
+use App\Mail\Invite;
 use Validator;
 use Auth;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Input;
 use DB;
 use Excel;
+use Illuminate\Support\Facades\Mail;
 
 class EventController extends Controller
 {

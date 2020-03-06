@@ -22,7 +22,7 @@
                             <table align="center" width="570" cellpadding="0" cellspacing="0">
                                 <tr>
                                     <td>
-                                        <h1>Hello, Your are being invited by {{$user->name}}.</h1>
+                                        <h1>Hello, Your are being invited by {{$auth->name}}.</h1>
                                         <br>
                                         <p>
                                             <br><br>
